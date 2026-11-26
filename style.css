@@ -4,7 +4,7 @@ body {
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
-    padding: 40px;
+    padding: 20px;
 
     /* وسط چین کردن متن با flex box */
 
@@ -19,7 +19,11 @@ body {
 
 h1 {
     color: #f5b700;
-    font-size: 40px;
+    font-size: clamp(28px, 7vw, 44px);
+}
+
+p {
+    font-size: clamp(16px, 4vw, 22px);
 }
 
 .my-btn {
@@ -27,8 +31,8 @@ h1 {
     color: #1a1a2e;
     border: none;
     border-radius: 12px;
-    padding: 12px 28px;
-    font-size: 18px;
+    padding: 14px 32px;
+    font-size: clamp(18px, 4.5vw, 26px);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     cursor: pointer;
     margin-top: 24px;

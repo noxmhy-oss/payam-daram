@@ -3,7 +3,7 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
-    <meta name="مهیارم" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>سلام زیبا رو</title>
 </head>
 <body>
@@ -16,11 +16,20 @@
  <button class="my-btn"
          onclick="sayhi()"
          onmouseover="this.textContent='تردید نکن'"
-         onmouseout="this.textContent='بمالم'">بمالم</button>
+         onmouseout="this.textContent='حتما کلیک کن'">حتما کلیک کن</button>
  <script>
-     function sayhi() {
-         alert("افرین,حالا برو به زندگیت برس")
-     }
+         const messages = [
+"یه موز بخور انرژی بگیری",
+"اشتباه گرفتید",
+"سیکتیر دیگه",
+"گاهی فقط باید سیکتیر کرد",
+"اراده تورو خیار داشت الان موز بود!",
+
+         ];
+         function sayhi() {
+             const index = Math.floor(Math.random() * messages.length);
+             alert(messages[index])
+         }
  </script>
 </body>
 </html>
